@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Ready Yet</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="65728-crown-lightpink.gif" type="image/gif">
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff4d4d, #ffb6c1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .container {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-in-out;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff6a8f;
+            margin-bottom: 20px;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: fadeIn 1.5s ease-in-out 0.5s;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff6a8f;
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            animation: fadeIn 1.5s ease-in-out 1s;
+        }
+
+        a:hover {
+            background-color: #ff4d66;
+        }
+
+        .logo {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            /* Logo kept still (no animation) */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo (Still) -->
+        <img src="65728-crown-lightpink.gif" alt="Logo" class="logo">
+
+        <h1>This Page is Not Ready Yet</h1>
+        <p>We are currently working hard on bringing you awesome features. Stay up to date by joining our Discord server for the latest news and updates!</p>
+        <a href="store.html">Join Our Discord Server</a>
+    </div>
+</body>
+</html>
